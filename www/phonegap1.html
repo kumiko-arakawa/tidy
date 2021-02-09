@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>PhoneGap2</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="components/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/loader.css">
+    <script type="text/javascript">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady(){
+            console.log("PhoneGap is ready.");
+        }
+         function show_pic() {
+            navigator.camera.getPicture (onSuccess, onFail, 
+                { quality: 50, destinationType: Camera.DestinationType.DATA_URL});
+ 
+ 
+            //成功した際に呼ばれるコールバック関数
+            function onSuccess (imageData) {
+                var image = document.getElementById ('picture');
+                image.src = "data:image/jpeg;base64," + imageData;
+            }
+ 
+            //失敗した場合に呼ばれるコールバック関数
+            function onFail (message) {
+                alert ('エラーです: ' + message);
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="phonegap-demo/master2.css" type="text/css" media="screen" title="no title">
+    <script type="text/javascript" charset="utf-8" src="phonegap-demo/main.js"></script>
+  </head>
+  <body>
+  <p class="img_center">
+    <a href="index.html">  
+    <img src="../img/td.png" class="td_button" ontouchstart=""></a>
+    </p>
+  
+      <a href="phonegap2.html"><div class= "pict"><img src="../img/photo.png"class="photo_button" ontouchstart="">
+       </div>
+       </a>
+      
+     <p class="p1">写真を撮って</p>
+   </main> 
+  <div class="box"> 
+        <div class="text1">
+         <h3> 写真画面 </h3></div>
+         <img id="picture" src=""width="400" height="250">
+   </div>
+  
+  <a href="photolib.html">
+    <img src="../img/photolib.png"class="photolib_button" ontouchstart="">
+  </a>
+  <a href="#" class="button--large" onclick="show_pic();">Get </a>
+  <a href="javascript:history.back()">
+    <img src="../img/back.png" class="back_button" ontouchstart="">
+  </p>
+ </a>
+    <p class="img_border">
+   <a href="kensaku.html"> 
+    <img src="../img/kensaku.png" class="kensaku_button" ontouchstart=""></a>
+   <a href="set.html">  
+    <img src="../img/basho.png" class="basho_button" ontouchstart=""></a>
+   <a href="index.html"> 
+    <img src="../img/home.png" class="home_button" ontouchstart=""></a>
+    <a href="set.html">
+    <img src="../img/set.png" class="set_button" ontouchstart=""></a>
+    <a href="list.html">
+    <img src="../img/list.png" class="list_button" ontouchstart=""></a>
+    </p>
+</body>
+</html>
+

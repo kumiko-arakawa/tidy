@@ -1,0 +1,150 @@
+
+
+ body {
+    margin: 0;
+    padding: 10;
+    background-color: #AFBEE3;
+    font-family: 'Helvetica Neue';
+}
+.p1{
+      color: #fff; 
+      font-family: 'Helvetica Neue';
+      font-size: 39pt;
+      text-align: center;
+      position:absolute; top:45px; left:65px;
+    }
+.box{
+  width: 247px;
+  height: 307px;
+  border-radius: 30px 30px 30px 30px;
+  background: #fff;
+  position:absolute; top:180px; left:65px;
+}
+.text1{
+     color:#908F8F; 
+      font-family: 'Helvetica Neue Regular';
+      font-size: 15pt;
+      position:absolute; top:80px; left:100px; 
+      vertical-align:bottom;
+     }
+ .text2{
+      color:#908F8F; 
+      font-family: 'Helvetica Neue Regular';
+      font-size: 15pt;
+       position:absolute; top:180px; left:100px; 
+      vertical-align:bottom;
+    }
+img.td_button {
+width: 64px;
+height: 64px;
+}
+img.new_button{
+width: 50px;
+height: 49px; 
+position:absolute; top:70px; left:30px; 
+}
+img.set2_button{
+width: 50px;
+height: 49px; 
+position:absolute; top:180px; left:30px; 
+}
+img.kensaku_button {
+width: 50px;
+height: 49px;
+}
+img.basho_button {
+width: 50px;
+height: 49px;
+}
+img.home_button {
+width: 50px;
+height: 49px;
+}
+img.set_button {
+width: 50px;
+height: 49px;
+}
+img.list_button {
+width: 50px;
+height: 49px;
+}
+p.img_center{
+  text-align: center;
+}
+  p.img_center{
+      text-align: center;
+      }
+      p.img_border{
+     display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      width:350px;
+     height:100px;
+     position:absolute; top:400px;left:-50px; 
+}
+img.td_button:hover{
+ 	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+ 	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+ /* pd画像をクリックした瞬間 */
+img.td_button:active{
+ 	/* 要素を若干下に下げることで、押した感じを出す。*/
+ 	/* 今いる位置から相対的に3px下に配置する。*/
+	position: relative;
+	top: 3px;
+ }
+ img.kensaku_button:hover{
+	opacity:0.9;
+	cursor: pointer;
+}
+img.kensaku_button:active{
+	position: relative;
+	top: 3px;
+ }
+img.basho_button:hover{
+	opacity:0.9;
+	cursor: pointer;
+}
+img.basho_button:active{
+	position: relative;
+	top: 3px;
+ }
+ img.home_button:hover{
+	opacity:0.9;
+	cursor: pointer;
+}
+img.home_button:active{
+	position: relative;
+	top: 3px;
+ }
+ img.set_button:hover{
+	opacity:0.9;
+	cursor: pointer;
+}
+img.set_button:active{
+	position: relative;
+	top: 3px;
+ }
+ img.list_button:hover{
+	opacity:0.9;
+	cursor: pointer;
+}
+img.list_button:active{
+	position: relative;
+	top: 3px;
+ }
+  img.back_button:hover{
+	opacity:0.9;
+	cursor: pointer; 
+}
+img.back_button:active{
+	position: relative;
+	top: 3px;
+  }
+  p.img_center2{
+   text-align: center;
+   position:absolute; top:330px;left:100px; 
+}
+ 
